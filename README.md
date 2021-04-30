@@ -10,6 +10,6 @@ There is:<br>
 > React hook `useState`<br>
 2. `SASS` library; => [Click here](https://sass-lang.com/)<br>
 > SASS `@mixin`, import components .scss files in `main.scss`
-3. Simple `CSS` triks;<br>
+3. Simple `CSS` tricks;<br>
 4. `gh-pages` deploy;<br>
 > GitHub Pages Site using `npm i gh-pages` command;<br>
