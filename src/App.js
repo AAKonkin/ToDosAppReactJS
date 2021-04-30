@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import ToDoList from './ToDos/ToDoList';
+import AddItemContainer from './components/AddItemContainer/AddItemContainer';
+import ToDoList from './components/ToDos/ToDoList';
 
 const App = () => {
   // State of Array items
@@ -80,16 +81,7 @@ const App = () => {
         <header>
           <h1>TODO List Experience Project (React)</h1>
           <h2>Всего активных заметок: <span>{ count() }</span></h2>
-          <div className='addItemContainer'>
-            <form onSubmit={ onAddItem }>
-              <div>
-              <span>Добавить заметку:</span>
-              <input onChange={ event => setValue(event.target.value) } maxLength={ 50 } placeholder='Введите заметку' value={ value }/>
-              <p>*50 символов максимум</p>
-              </div>
-              <button onClick={ onAddItem } type='submit'>Добавить</button>
-            </form>
-          </div>
+          <AddItemContainer onAddItem={ onAddItem } setValue={ setValue } value={ value } />
         </header>
         <article>
         { ToDoItems.length ? (<ToDoList ToDoItems={ ToDoItems } onChecked={ onChecked } onDelItem={ onDelItem } />) : <p>У Вас нет заметок. Вы можете их добавить</p> }

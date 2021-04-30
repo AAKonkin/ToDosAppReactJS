@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 README.md
+
+oldApp.css
+AddItemContainer.css
+ToDoItem.css
+mixins.css

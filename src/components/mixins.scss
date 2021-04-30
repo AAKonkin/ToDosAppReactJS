@@ -1,0 +1,13 @@
+// All Mixins used in App
+/*------------------*/
+@mixin setMarginFontSizePadding($margin, $font-size, $padding){
+    margin: $margin;
+    font-size: $font-size;
+    padding: $padding;
+}
+
+@mixin setFlexJustAlign($justCont, $align-items){
+    display: flex;
+    justify-content: $justCont;
+    align-items: $align-items;
+}

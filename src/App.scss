@@ -1,0 +1,35 @@
+/* START App Block styles START */
+/*------------------*/
+/* Lato font-family used in index.css */
+.App {
+    text-align: center;
+    background-color: silver;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+    & h1 {
+        margin: 0;
+        padding: 20px 0;
+        color: whitesmoke;
+        background-color: rgba(128, 128, 128, 0.479);
+    }
+    & p {
+        font-size: 20px;
+        text-decoration: underline black;
+    }
+    & h2 {
+        text-align: start;
+        margin: 20px 10px;
+        & span {
+            color:rgba(2, 153, 40, 0.514);
+        }
+    }
+}
+/*------------------*/
+/* END Add Item Container styles END */ 
+@import "./components/AddItemContainer/AddItemContainer.scss";
+@import "./components/ToDos/ToDoItem.scss";

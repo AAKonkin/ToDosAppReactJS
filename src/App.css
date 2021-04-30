@@ -22,7 +22,8 @@
 
 .container p {
   font-size: 20px;
-  text-decoration: underline black;
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
 }
 
 .container h2 {
@@ -31,59 +32,89 @@
 }
 
 .container h2 span {
-  color:rgba(2, 153, 40, 0.514);
+  color: rgba(2, 153, 40, 0.514);
 }
+
 /*------------------*/
 /* END Add Item Container styles END */
-
+/*------------------*/
 /* START Add Item Container styles START */
 /*------------------*/
 .addItemContainer {
   margin: 5px 10px;
-  padding: 20px 0;
   font-size: 20px;
+  padding: 20px 0;
   border-bottom: 1px solid black;
 }
 
 .addItemContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .addItemContainer form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .addItemContainer span {
   font-weight: 400;
 }
 
-.addItemContainer input{
+.addItemContainer input {
   margin: 0 10px;
   font-size: 15px;
+  padding: 0;
 }
 
 .addItemContainer p {
-  font-size: 13px;
+  margin: 0;
+  font-size: 13;
+  padding: 0;
   font-weight: 700;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
   opacity: 50%;
+}
+
+.addItemContainer button {
+  padding: 3px 8px;
 }
 
 /*------------------*/
 /* END Add Item Container styles END */
-
+/*------------------*/
 /* START ToDoList Component styles START */
 /*------------------*/
 .ToDoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 5px 20px;
   overflow-y: scroll;
   height: 50vh;
@@ -92,29 +123,44 @@
 /* ToDoItem Start */
 .ToDoItem {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px 10px;
+  font-size: 18px;
   padding: 10px;
   border: 1px solid black;
   background-color: lightcyan;
 }
 
 .ToDoItem div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ToDoItem span {
   margin: 0 10px;
   font-size: 18px;
+  padding: 0;
   font-weight: 300;
 }
 
 .ToDoItem p {
   margin: 0 10px;
+  font-size: 16px;
   padding: 0;
   text-decoration: none;
 }
@@ -124,17 +170,24 @@
   height: 18px;
 }
 
+.ToDoItem button {
+  padding: 3px 8px;
+}
+
 .done {
   background-color: lightsalmon;
 }
 
 .done span {
-  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 
 .done p {
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
+
 /*ToDoItem END */
 /*------------------*/
 /* END ToDoList Component styles END */
