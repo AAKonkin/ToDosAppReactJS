@@ -13,3 +13,7 @@ There is:<br>
 3. Simple `CSS` tricks;<br>
 4. `gh-pages` deploy;<br>
 > GitHub Pages Site using `npm i gh-pages` command;<br>
+5. `redux` library; => [Click here](https://redux.js.org/)<br>
+> 05.05.21 Project rewrite with included redux library;<br>
+6. `react-redux` library; => [Click here](https://react-redux.js.org/)<br>
+> 05.05.21 Well, since the app uses redux, i decided to include and learn react-redux lib;<br>

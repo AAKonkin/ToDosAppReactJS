@@ -2,15 +2,14 @@ import React from 'react';
 import ToDoItem from './ToDoItem';
 
 export default function TodoList(props) {
-    
-    let todoList = props.ToDoItems.map(item => 
+    let todoList = props.ToDos.map(item => 
         <ToDoItem id={ item.id } checked={ item.checked } message={ item.message } 
-        onChecked={ () => props.onChecked(item.id) } 
-        onDelItem={ () => props.onDelItem(item.id) }
+        CheckedItenBtn={ props.CheckedItenBtn }
+        DeleteItemBtn={ props.DeleteItemBtn }
         key={ item.id }/>)
-
     return(<div className='ToDoList'>
-            { todoList }
+             { (props.ToDos.length) === 0 ? <p>У Вас нет заметок. Вы можете их добавить</p> : null }
+             { todoList }
         </div>
     );
 };
